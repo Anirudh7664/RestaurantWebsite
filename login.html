@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn">
+
+                </div>
+                <button type="button" class="btn" onclick="login()">Log In</button>
+                <button type="button" class="btn" onclick="signin()">Sign Up</button>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <form  id="login" action="" class="input-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn"><a href="index.html">Log In</a></button>
+            </form>
+            <form  id="signin" action="" class="input-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" class="input-field" placeholder="Set Password" required>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box" required><span>I Agree to the Terms & Conditions</span>
+                <button type="submit" class="submit-btn"><a href="index.html">Sign up</a></button>
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y =document.getElementById("signin");
+        var z = document.getElementById("btn");
+        
+        function signin(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+
+    </script>
+    
+</body>
+</html>
